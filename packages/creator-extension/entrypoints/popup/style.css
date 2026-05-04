@@ -1,0 +1,72 @@
+/* DESIGN.md — Supabase-inspired dark tokens (popup shell) */
+:root {
+  /* Brand */
+  --color-brand: #3ecf8e;
+  --color-link: #00c573;
+  --color-border-accent: rgba(62, 207, 142, 0.3);
+
+  /* Neutrals */
+  --color-btn-bg: #0f0f0f;
+  --color-page: #171717;
+  --color-divider: #242424;
+  --color-border: #2e2e2e;
+  --color-border-mid: #363636;
+  --color-border-light: #393939;
+  --color-charcoal: #434343;
+  --color-gray-heavy: #4d4d4d;
+  --color-muted: #898989;
+  --color-secondary: #b4b4b4;
+  --color-text: #fafafa;
+
+  /* Surfaces */
+  --color-surface-raised: rgba(41, 41, 41, 0.84);
+
+  /* Typography — Circular 相当は Helvetica 系（拡張 CSP 回避） */
+  --font-sans: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+
+  --focus-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  max-width: 400px;
+  background-color: var(--color-page);
+}
+
+#root {
+  min-height: 100%;
+}
+
+a {
+  color: var(--color-link);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-sans);
+}
